@@ -6,7 +6,7 @@ import { validateEmail } from "../../utils/helper";
 const Login = ({ setCurrentPage }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("null");
+  const [error, setError] = useState(null);
 
   const navigate = useNavigate();
 
@@ -36,7 +36,7 @@ const Login = ({ setCurrentPage }) => {
     }
   };
   return (
-    <div className="w-[900vw] md:w-[33vw] p-7 flex flex-col justify-center">
+    <div className="w-[90vw] md:w-[33vw] p-7 flex flex-col justify-center">
       <h3 className="text-lg font-semibold text-black">Welcome Back</h3>
       <p className="text-xs text-slate-700 mt-[5px] mb-6">
         Please enter your details to log in
@@ -61,7 +61,7 @@ const Login = ({ setCurrentPage }) => {
           LOGIN
         </button>
         <p className="text-[13px] text-slate-800 mt-3">
-          Don't have an account?{""}
+          Don't have an account?{" "}
           <button
             className="font-medium text-primary underline cursor-pointer"
             onClick={() => {
